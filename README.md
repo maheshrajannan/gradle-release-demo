@@ -15,3 +15,5 @@ You can see the published artifacts on [Bintray](https://bintray.com/robfletcher
 
 ![CircleCI](https://img.shields.io/circleci/project/github/robfletcher/gradle-release-demo.svg?style=for-the-badge)
 ![Bintray](https://img.shields.io/bintray/v/robfletcher/demo/demo-core.svg?style=for-the-badge)
+
+test commit
