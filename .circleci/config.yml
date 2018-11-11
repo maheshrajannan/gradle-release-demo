@@ -12,30 +12,14 @@ jobs:
     <<: *defaults
     steps:
       - checkout
-      - restore_cache:
-          keys:
-          - v1-dependencies-{{ checksum "build.gradle" }}
-          - v1-dependencies-
       - run: gradle dependencies
-      - save_cache:
-          paths:
-            - ~/.gradle
-          key: v1-dependencies-{{ checksum "build.gradle" }}
       - run: ./gradlew build
 
   release:
     <<: *defaults
     steps:
       - checkout
-      - restore_cache:
-          keys:
-          - v1-dependencies-{{ checksum "build.gradle" }}
-          - v1-dependencies-
       - run: gradle dependencies
-      - save_cache:
-          paths:
-            - ~/.gradle
-          key: v1-dependencies-{{ checksum "build.gradle" }}
       - run: ./gradlew -Prelease.useLastTag=true final
 
 workflows:
