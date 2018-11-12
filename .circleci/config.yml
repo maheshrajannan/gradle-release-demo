@@ -13,14 +13,14 @@ jobs:
     steps:
       - checkout
       - run: gradle dependencies
-      - run: ./gradlew build
+      - run: ./gradlew -stacktrace build
 
   release:
     <<: *defaults
     steps:
       - checkout
       - run: gradle dependencies
-      - run: ./gradlew final
+      - run: ./gradlew -stacktrace final
 
 workflows:
   version: 2
