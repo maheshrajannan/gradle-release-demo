@@ -13,7 +13,7 @@ jobs:
     steps:
       - checkout
       - run: gradle dependencies
-      - run: ./gradlew -stacktrace build
+      - run: ./gradlew -stacktrace final
 
   release:
     <<: *defaults
