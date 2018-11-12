@@ -22,3 +22,4 @@ test commit
 ![CircleCI](https://img.shields.io/circleci/project/github/maheshrajannan/gradle-release-demo.svg?style=for-the-badge)
 ![Bintray](https://img.shields.io/bintray/v/maheshrajannan/demo/demo-core.svg?style=for-the-badge)
 >>>>>>> origin/4-automate
+test 1.0.0
