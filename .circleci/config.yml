@@ -20,7 +20,7 @@ jobs:
     steps:
       - checkout
       - run: gradle dependencies
-      - run: ./gradlew -Prelease.useLastTag=true final
+      - run: ./gradlew final
 
 workflows:
   version: 2
